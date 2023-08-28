@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --box-width: calc(100% / 4);
+    --box-height: calc(100% / 6)
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    padding-top: 3%;
+}
+
+.calculator {
+    box-sizing: border-box;
+    width: calc(100% / 3);
+    height: 94%;
+    margin: auto;
+    padding-top: 3%;
+    border: 0.2vw rgba(185, 185, 185) solid;
+    border-radius: 0.6vw;
+    box-shadow: 5px 5px 5px rgb(232, 231, 231);
+}
+
+.display,
+.p {
+    box-sizing: border-box;
+    border: 0.1vw #ffffff solid;
+    padding-right: 1%;
+}
+
+.p {
+    text-align: right;
+    height: 30%;
+}
+
+.display {
+    box-sizing: border-box;
+    height: 25%;
+    padding-top: calc((16% - 0.6vw) / 2);
+}
+
+.text1 {
+    color: rgb(96, 98, 100);
+    margin-bottom: 0.5vw;
+    font-size: 1.5vw;
+}
+
+.text2 {
+    font-size: 2vw;
+}
+
+.button {
+    box-sizing: border-box;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    text-align: center;
+    border: 0.2vw rgb(226, 229, 234) solid;
+    border-bottom: 0.2vw rgb(201, 204, 208) solid;
+    border-radius: 0.3vw;
+    line-height: 5vw;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button-2 {
+    margin-left: 3%;
+}
+
+.button-3 {
+    margin-bottom: 0;
+}
+
+.box {
+    /* border: 1px #000 solid; */
+    height: 74%;
+    display: grid;
+    grid-template-columns: repeat(4, var(--box-width));
+    grid-template-rows: repeat(6, var(--box-height));
+}
+
+.img {
+    width: 30%;
+}
