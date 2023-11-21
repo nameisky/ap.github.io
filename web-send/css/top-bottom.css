@@ -1,0 +1,161 @@
+@keyframes top-box {
+    0% {
+        top: -50px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes background-text {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes background-text2 {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes arrowhead-top {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes arrowhead-buttom {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.top-box {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: -50px;
+    line-height: 50px;
+    animation-name: top-box;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.top-host {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.top-host-left {
+    width: 30%;
+}
+
+.top-host-right {
+    width: 70%;
+}
+
+.top-text {
+    position: relative;
+    color: #ABAFB7;
+    text-align: center;
+    width: calc(100% / 7);
+}
+
+.top-text:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+.background-text {
+    display: none;
+    height: 100%;
+    margin: auto;
+    background: #021337;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.top-selected,
+.top-ai {
+    color: #fff;
+    background: #2080D5;
+    font-weight: bold;
+}
+
+.top-selected {
+    background: #021337;
+}
+
+.arrowhead {
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/*  */
+
+.top-drop-down {
+    z-index: 1;
+    position: fixed;
+    overflow: hidden;
+    background: #101a34cf;
+    padding-left: 1%;
+    font-size: calc(1272px / 90);
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.top-drop-down>div {
+    width: 100%;
+    color: #ABAFB7;
+    line-height: 170%;
+}
+
+.drop-down-img {
+    width: 13%;
+}
+
+._1>img {
+    margin-right: 5%;
+}
+
+._0 {
+    display: none;
+    /* pointer-events: none; */
+}
+
+._1:hover {
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.size {
+    margin-left: 18%;
+    font-size: calc(1272px / 140);
+}
+
+._size:hover {
+    color: #3691e0;
+}

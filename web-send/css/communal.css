@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    color: #fff;
+}
+
+a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0);
+}
+
+.row-flex,
+.column-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-flex {
+    flex-direction: column;
+}
+
+.box-border {
+    box-sizing: border-box;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+button {
+    border: none;
+}
