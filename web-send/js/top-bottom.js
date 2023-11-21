@@ -50,7 +50,7 @@ function fun_top_query() {
 top_query = fun_top_query()
 function top_use() {
     top_query["body"].style.fontSize = "calc(" + width + "px / 100)"
-    top_query["box_border"].style.cssText = "height:" + top_query["height"] + "px;line-height:" + top_query["height"] + "px;font-size:calc(" + width + "px / 90);border-bottom:calc(1272px / 100000) #4D5259 solid"
+    //top_query["box_border"].style.cssText = "height:" + top_query["height"] + "px;line-height:" + top_query["height"] + "px;font-size:calc(" + width + "px / 90);border-bottom:calc(1272px / 100000) #4D5259 solid"
     top_query["icon_gntd"].style.cssText = "font-size:calc(" + width + "px / 90)"
     top_query["top_drop_down"].style.cssText = "width:" + width / 6.3 + "px;font-size:calc(" + width + "px / 90);"
 }
