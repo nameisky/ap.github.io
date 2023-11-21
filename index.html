@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web-send/iconfont/iconfont.css">
+    <link rel="stylesheet" href="web-send/css/communal.css">
+    <link rel="stylesheet" href="web-send/css/top-bottom.css">
+    <style>
+        @keyframes top-drop-down {
+            0% {
+                height: 0;
+            }
+
+            100% {
+                height: 1px;
+            }
+        }
+
+        @keyframes top-drop-down2 {
+            0% {
+                height: 1px;
+            }
+
+            100% {
+                height: 0;
+            }
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div id="result"></div>
+    <script>
+        // 创建一个 XMLHttpRequest 对象
+        var xhr = new XMLHttpRequest();
+
+        // 定义一个处理响应的函数
+        xhr.onload = function () {
+            // 如果请求成功
+            if (xhr.status == 200) {
+                // 获取响应的文本内容
+                var responseText = xhr.responseText;
+                // 在控制台打印出来
+                console.log(responseText);
+                // 或者在页面上显示出来
+                document.getElementById("result").innerHTML = responseText;
+            }
+        };
+
+        // 打开一个 GET 请求，指定要获取的 HTML 文件的 URL
+        xhr.open("GET", "2.html");
+
+        // 发送请求
+        xhr.send();
+
+    </script>
+    <!-- <script src="web-send/js/top-bottom.js"></script> -->
+</body>
+
+</html>
