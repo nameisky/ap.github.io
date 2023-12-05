@@ -1,0 +1,105 @@
+.host1 {
+    position: relative;
+    /* overflow: hidden; */
+    height: calc(100vw * 0.428);
+    color: #fff;
+}
+
+/* host1 */
+.host1-box {
+    width: calc(100vw * 6);
+    height: 100%;
+}
+
+.host1-box>div {
+    width: calc(100% / 6);
+    height: 100%;
+}
+
+.choose {
+    position: absolute;
+    width: 40%;
+    height: 10%;
+    bottom: 0;
+    margin-left: 30%;
+    transform: skew(-30deg)
+}
+
+.choose>div {
+    width: 10%;
+    height: 20%;
+    background: #ffffff7f;
+}
+.choose>div:hover{
+    cursor: pointer;
+    background: #fff;
+}
+
+/* host1-box */
+.img_1,
+.img_2,
+.img_3,
+.img_4,
+.img_5,
+.img_6 {
+    height: 100%;
+    padding-top: 13%;
+    background: url(../picture/home-banner-algorithm.jpg);
+    background-size: 100% 100%;
+}
+
+.img_2 {
+    background: url(../picture/home-banner-01.jpg);
+    background-size: 100% 100%;
+}
+
+.img_3 {
+    background: url(../picture/home-banner-02.jpg);
+    background-size: 100% 100%;
+}
+
+.img_4 {
+    background: url(../picture/home-banner-d04.jpg);
+    background-size: 100% 100%;
+}
+
+.img_5 {
+    background: url(../picture/home-banner-03.jpg);
+    background-size: 100% 100%;
+}
+
+.img_6 {
+    background: url(../picture/home-banner-04.jpg);
+    background-size: 100% 100%;
+}
+
+/* img_1 */
+.host1-text1 {
+    font-size: calc(100vw / 34);
+}
+
+.host1-text2 {
+    margin-top: 2%;
+    font-size: var(--size);
+}
+
+.host1-text3 {
+    margin-top: 1%;
+    font-size: var(--size);
+}
+
+.know {
+    width: 16%;
+    height: 10%;
+    margin-top: 5%;
+    background: rgba(0, 0, 0, 0.3) url(../images/sanjiao.png) no-repeat 90% 50%;
+    background-size: auto 60%;
+    border-radius: calc(100vw / 50);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: var(--size);
+}
+
+.know:hover {
+    cursor: pointer;
+    color: rgb(13, 106, 197);
+}
